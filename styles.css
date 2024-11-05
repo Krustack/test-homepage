@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #01a0d0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+    & .logo{
+        font-size: 1.5rem;
+    }
+    & ul{
+        display: flex;
+        list-style: none;
+        & li{
+            margin-left: 10px;
+
+        }
+    }
+}
+header > .hero {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    & img{
+        width: 100%;
+        object-fit: cover;
+    }
+    & .overlay{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        z-index: 1 ;
+    }
+    & article{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        color: white;
+        & h1{
+            font-size: 3rem;
+        }
+        & p{
+            font-size: 1.5rem;
+        }
+        & button{
+            padding: 20px 30px;
+            margin-top: 20px;
+            background-color: #01a0d0;
+            border-radius: 0.25rem;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.pricing{
+    background-color: #01a0d0;
+    color: white;
+    padding: 25px 10px;
+}
+.price-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    & .price-card{
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #01a0d0;
+        border-radius: 0.25rem;
+        text-align: center;
+        & h2{
+            font-size: 2rem;
+            color: #01a0d0;
+        }
+        & p{
+            font-size: 1rem;
+        }
+        & button{
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #01a0d0;
+            border-radius: 0.25rem;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+    }
+    & .recommend{
+        background-color: #01a0d0;
+        color: white;
+        padding: 30px;
+        border-radius: 0.25rem;
+        & button{
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 0.25rem;
+            color: #01a0d0;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
